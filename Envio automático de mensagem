@@ -1,0 +1,57 @@
+import pyautogui 
+import time
+
+############### AS POSIÇÕES DOS CLIQUES VARIAM DE ACORDO COM SUA TELA, VERIFIQUE AS POSIÇÕES ###############
+
+
+i=0
+
+pyautogui.PAUSE = 1
+
+# Abre o windows e o whats
+pyautogui.press('win')
+pyautogui.write('whats')
+pyautogui.press('enter')
+time.sleep(5)
+
+#Seleciona para abrir nova conversa
+pyautogui.click(x=326, y=57)
+pyautogui.write('Contato')
+pyautogui.press('enter')
+
+# Seleciona o campo para iniciar a digitalização
+pyautogui.click(x=676, y=696)
+time.sleep(1)
+
+# Envia a mensagem
+
+pyautogui.write('mensagem txt')
+pyautogui.press('enter')
+
+#quantidade de vezes para rodar o fluxo
+while i < 1:
+    
+    pyautogui.click(x=326, y=57)
+    pyautogui.write('Contato')
+    pyautogui.press('enter')
+    
+    pyautogui.write('qualquer texto a ser enviado')
+    pyautogui.press('enter')
+    time.sleep(1)
+    
+    pyautogui.click(x=326, y=57)
+    pyautogui.write('Contato')
+    pyautogui.press('enter')
+    
+    pyautogui.write('qualquer texto a ser enviado')
+    pyautogui.press('enter')
+    time.sleep(1)
+    
+    pyautogui.click(x=326, y=57)
+    pyautogui.write('Contato')
+    pyautogui.press('enter')
+    
+    pyautogui.write('qualquer texto a ser enviado')
+    pyautogui.press('enter')
+    
+i+=1
